@@ -6,31 +6,30 @@ public class Game {
     Board board;
     boolean currentPlayer = true;
 
-    public void playRound(Board board, boolean currentPlayer){
-        displayTurn(currentPlayer);
+    public void playRound(){
+        displayTurn();
         tryToMakeMove();
         System.out.println(board);
     }
 
-    private void displayTurn(boolean currentPlayer) {
-        if (currentPlayer){
+    private void displayTurn() {
+        if (currentPlayer) {
             System.out.println("White turn!");
-        }
-        else {
+        } else {
             System.out.println("Black turn!");
         }
     }
 
     public void start() {
         System.out.println("Welcome in Polish Draughts Game! White starts!");
-        getBoardSize();
+        createBoard();
         while (!checkForWinner()) {
-            playRound(board, currentPlayer);
+            playRound();
             currentPlayer = !currentPlayer;
         }
     }
 
-    private void getBoardSize() {
+    private void createBoard() {
         Scanner scan = new Scanner(System.in);
         boolean wrongUserInput = true;
         while (wrongUserInput) {

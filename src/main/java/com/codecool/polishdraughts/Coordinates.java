@@ -17,12 +17,4 @@ public class Coordinates {
     public int getYCoordinate(){
         return this.y;
     }
-
-    public void setXCoordinate(int x){
-        this.x = x;
-    }
-
-    public void setYCoordinate(int y){
-        this.y = y;
-    }
 }

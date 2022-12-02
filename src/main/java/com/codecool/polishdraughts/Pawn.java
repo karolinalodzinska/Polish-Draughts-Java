@@ -2,7 +2,7 @@ package com.codecool.polishdraughts;
 
 public class Pawn {
     private boolean color;
-    Coordinates position;
+    private Coordinates position;
 
     public Pawn(boolean color, int x, int y) {
         this.color = color;
