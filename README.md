@@ -6,4 +6,5 @@ Polish Draughts is a two-player board game where the goal is to capture all oppo
 ## Technologies used
 - Java
 
-## Video of project
+## Screenshot
+![polish_draughts](https://github.com/karolinalodzinska/Polish-Draughts-Java/assets/102509808/f41a1261-aaca-40be-b17b-2f172486bb6a)
